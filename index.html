@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Job Fair Registration Form</title>
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <div class="mn">
+
+
+                <tr class="t1">
+                    <td>Full Name <span>*</span></td>
+                    <td class="first right-side">
+                        <div class="first-a">
+                            <input class="inp1" type="text" />
+                            <span class="no">First Name</span>
+                            <div class="error-popup" id="inp1-error"></div>
+                        </div>
+                        <div class="first-b">
+                            <input class="inp2" type="text" />
+                            <span class="no">Last Name</span>
+                            <div class="error-popup" id="inp2-error"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="t3">
+                    <td>
+                        University
+                        <span>*</span>
+                    </td>
+                    <td class="right-side">
+                        <select class="inp3" name="university" id="university">
+                            <option value=""></option>
+                            <option value="KU Leuven">KU Leuven</option>
+                            <option value="University of Antwerp">
+                                University of Antwerp
+                            </option>
+                            <option value="University of Ghent">University of Ghent</option>
+                            <option value="University of Hassel">
+                                University of Hasselt
+                            </option>
+                            <option value="Vrije University Brussel">
+                                Vrije University Brussel
+                            </option>
+                            <option value="Hogeschool-University Brussel">
+                                Hogeschool-University Brussel
+                            </option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <div class="error-popup" id="inp3-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>If Other - Please Specify</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr class="t4">
+                    <td>
+                        Faculty
+                        <span>*</sp>
+                    </td>
+                    <td class="right-side">
+                        <select class="inp4" name="PhD" id="university">
+                            <option value=" "> </option>
+                            <option value="Science">Science</option>
+                            <option value="Engineering">Engineering</option>
+                            <option value="Medicine">Medicine</option>
+                            <option value="Bioscience Engineering">Bioscience Engineering</option>
+                            <option value="Pharmaceutical Sciences">Pharmaceutical Sciences</option>
+                            <option value="Pharmaceutical Sciences">Pharmaceutical Sciences</option>
+                            <option value="Kinesiology and Rehabilitation Sciences">Kinesiology and Rehabilitation
+                                Sciences
+                            </option>
+                            <option value="Theology">Theology</option>
+                            <option value="Canon Law">Canon Law</option>
+                            <option value="Philosophy">Philosophy</option>
+                            <option value="Law">Law</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <div class="error-popup" id="inp4-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>If Other - Please Specify</td>
+                    <td class="right-side"><input type="text" /></td>
+                </tr>
+                <tr class="t5">
+                    <td>
+                        Academic year of PhD
+                        <span>*</span>
+                    </td>
+                    <td class="right-side">
+                        <select class="inp5" name="PhD" id="university">
+                            <option value=" "> </option>
+                            <option value="1 year">1 year</option>
+
+                            <option value="2 year">2 year</option>
+
+                            <option value="3 year">3 year</option>
+
+                            <option value="4 year">4 year</option>
+
+                            <option value=">4">>4</option>
+
+                            <option value=" post-doc">post-doc</option>
+
+                            <option value=" alumni">alumni</option>
+
+                            <option value=" other">other</option>
+                        </select>
+                        <div class="error-popup" id="inp5-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Where would you like to work</td>
+                    <td class="chk-box right-side">
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="Academia" name="work" value="Academia" />
+                            <label for="Academia">Academia</label>
+                        </div>
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="Industry" name="work" value="Industry" />
+                            <label for="Industry">Industry</label>
+                        </div>
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="Consultancy" name="work" value="Consultancy" />
+                            <label for="Consultancy">Consultancy</label>
+                        </div>
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="Finance" name="work" value="Finance" />
+                            <label for="Finance">Finance</label>
+                        </div>
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="PolicyGovernmentNGO" name="work"
+                                value="Policy / Government / NGO" />
+                            <label for="PolicyGovernmentNGO">Policy / Government / NGO</label>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="big-cl t6">
+                    <td>
+                        Confirm E-mail
+                        <span>*</span>
+                    </td>
+                    <td class="right-side in2">
+                        <div class="p2">
+
+                            <input class="inp6" type="text" placeholder="ex: myname@example.com" />
+                            <input class="inp6" type="text" placeholder="Confirm Email" />
+                            <div class="error-popup" id="inp6-error"></div>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Would you like to sign up to our newsletter ?</td>
+                    <td class="yn">
+                        <input type="radio" id="newsletter" name="newsletter" value="Yes" />
+                        <label for="newsletter">Yes</label><br />
+
+                        <input type="radio" id="newsletter" name="newsletter" value="No, I have already signed up" />
+                        <label for="newsletter">No, I have already signed up</label><br />
+
+                        <input type="radio" id="newsletter" name="newsletter" value="No" />
+                        <label for="newsletter">No</label><br />
+                    </td>
+                </tr>
+            </div>
+
+        </table>
+        <input class="sbn" type="submit" value="Submit" />
+    </form>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
